@@ -17,3 +17,9 @@ jobs:
         run: terraform plan
       - name: Terraform Apply
         run: terraform apply -auto-approve
+      - name: Setup Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.8'
+      - name: Run Python Greeting Script
+        run: python greeting.py

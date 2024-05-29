@@ -6,6 +6,6 @@ resource "local_file" "python_greeting" {
   filename = "${path.module}/greeting.py"
   content  = <<-EOT
     def greet(name):
-        print(f"Hello, {name}!")
+        print(f"Hello World")
   EOT
 }
