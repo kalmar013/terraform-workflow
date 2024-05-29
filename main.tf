@@ -3,9 +3,7 @@ provider "local" {
 }
 
 resource "local_file" "python_greeting" {
-  filename = "${path.module}/greeting.py"
-  content  = <<-EOT
-    def greet(name):
-        print(f"Hello World")
+  filename = var.python_name
+  content  = var.message
   EOT
 }
