@@ -1,10 +1,12 @@
 variable "python_name" {
-  description = "The name of the Python file to be created."
+  description = "file."
+  type        = string
   default     = "greeting.py"
 }
 
 variable "message" {
-  description = "The content of the Python greeting function."
+  description = "mess"
+  type        = string
   default     = <<-EOT
 def greet(name):
     print(f"Hello, {name}!")

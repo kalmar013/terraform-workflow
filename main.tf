@@ -5,5 +5,4 @@ provider "local" {
 resource "local_file" "python_greeting" {
   filename = var.python_name
   content  = var.message
-  EOT
 }
