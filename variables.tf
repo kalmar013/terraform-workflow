@@ -5,7 +5,7 @@ variable "python_name" {
 
 variable "message" {
   description = "The content of the Python greeting function."
-  default     = <<EOT
+  default     = <<-EOT
 def greet(name):
     print(f"Hello, {name}!")
 EOT
